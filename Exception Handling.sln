@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception Handling", "Exception Handling\Exception Handling.csproj", "{2E4D5305-298B-4AE5-ADB6-11030FECFDBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{146103B2-6079-4A30-9379-EBFEE3F50A93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2E4D5305-298B-4AE5-ADB6-11030FECFDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E4D5305-298B-4AE5-ADB6-11030FECFDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E4D5305-298B-4AE5-ADB6-11030FECFDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{146103B2-6079-4A30-9379-EBFEE3F50A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146103B2-6079-4A30-9379-EBFEE3F50A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146103B2-6079-4A30-9379-EBFEE3F50A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146103B2-6079-4A30-9379-EBFEE3F50A93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

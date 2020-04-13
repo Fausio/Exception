@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using System;
+
 
 namespace Exception_Handling
 {
@@ -14,20 +16,56 @@ namespace Exception_Handling
     {
         static void Main(string[] args)
         {
+            //int[] vs = new int[2];
+            #region System.IndexOutOfRangeException / System.DivideByZeroException
+
+            //try
+            //{
+
+            //    vs[0] = 2;
+            //    vs[1] = 0;
+
+            //    // it will through an exception here 
+            //    int divider = vs[0] / vs[1];
+            //    vs[2] = 9;
+
+
+            //}
+            //catch (IndexOutOfRangeException index)
+            //{
+
+            //    Console.WriteLine("Exception message is : {0}", index);
+            //}
+            //catch (DivideByZeroException  dev)
+            //{
+            //    vs[1] = 2;
+
+            //    Console.WriteLine("Exception message is : {0}", dev);
+
+            //}
+            ////catch (Exception ex) // this class Exception is a base Exception class  (Runtime polymorphism)
+            ////{ 
+            ////    Console.WriteLine("Exception message is : {0}", ex); 
+            ////}
+            //finally { }
+            #endregion
 
             try
             {
-                int[] vs = new int[2];
-                vs[0] = 2;
-                vs[1] = 8;
-                // it will through an exception here 
-                vs[2] = 9;
+                var result = Calc.Divide(10, 0);
+                Console.WriteLine("The result is {0}", result);
             }
             catch (Exception ex)
             {
 
-                Console.WriteLine("Exception message is : {0}", ex);
+                Console.WriteLine("Exceprion Message is : " + ex.Message);
             }
+            finally
+            {
+                // We usually kill the process here (close conection,windows form etc)
+            }
+
+
 
 
             Console.ReadKey();
